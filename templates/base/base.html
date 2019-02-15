@@ -37,7 +37,11 @@
       </ul>
     </div>
   </div>	
-</div>	
+</div>
+
+	{% block footer %}
+		{% include 'base/footer.html' %}
+	{% endblock %}	
 	
 	{% block extrajs %}
 

@@ -5,6 +5,11 @@
     	$('.sidenav').sidenav();
   	});
 
+//Inicializamos el parallax1
+	$(document).ready(function(){
+	    $('.parallax').parallax();
+	});
+
 
 //funcion para el menu fixed
 		  //var loguito = document.getElementById("logo");
@@ -27,5 +32,5 @@
 
 		  		});
 		  });
-
-}());*/
+*/
+}());

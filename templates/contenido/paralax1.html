@@ -1,0 +1,11 @@
+{% load staticfiles %}
+{% block content %}
+	<div class="parallax-container">
+		{% block home %}
+			{% include 'contenido/home.html' %}
+		{% endblock%}
+		<div class="parallax">
+			<img src="{% static 'imagenes/flat1.PNG'%}" class="paralax1">			
+		</div> 
+	</div>
+{% endblock %}

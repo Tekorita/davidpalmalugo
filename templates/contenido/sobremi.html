@@ -1,16 +1,38 @@
+{% load staticfiles %}
 {% block content %}
 <div id="sobremi" class="section scrollspy">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col s12 m12 l12">
-		    <h3>Sobre mi</h3>  
-		        <p>        	
-		        	Qué es Lorem Ipsum?
-					Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+			<div class="col s12 m12 l12 center">
+				<img class="responsive-img" src="{% static 'imagenes/sobremi1.png'%}">
+			</div>	
+			<div class="col s12 m12 l12 white-text">  
+		        <ul id="tabs-swipe-demo" class="tabs red lighten-1">
+				    <li class="tab col s3"><a href="#test-swipe-1" class="active white-text">Quien Soy</a></li>
+				    <li class="tab col s3"><a href="#test-swipe-2" class="white-text">En que me enfoco</a></li>
+				    <li class="tab col s3"><a href="#test-swipe-3" class="white-text">Conclusiones</a></li>
+				</ul>
+				<div id="test-swipe-1" class="col s12 red lighten-1">
+				  	<p>        	
+			        	Hola me llamo David Palma y soy programador web enfocado en el Diseño y Desarrollo FrontEnd y Desarrollador Backend. Maquetando en HTML5 con CSS3 basado en los estándares W3C y programando de manera amigable a nivel de SEO on page, intento sacar el máximo partido a herramientas como Sublime, plugins que me faciliten el desarrollo de codigo. También estoy capacitado para realizar trabajos de identidad gráfica o corporativa y soy un apasionado de la fotografía.
+			        </p>
+			        <p>		
+						Siempre he tenido como hábitat el entorno de la industria gráfica, tanto a nivel formativo como laboral. 	Después de finalizar mis estudios de diseño gráfico he trabajado en varias ramas que abarcan desde la preimpresión, impresión, diseño web y márketing online en empresas como El Pais, Cosmobelleza, Mecalux, Groupalia o Hewlett Packard.
+					</p>	
+						Actualmente sigo creciendo a nivel profesional junto al equipo UX de HP ejerciendo de Lead UX/UI y Desarrollador Web Frontend, pero desde hace ya un tiempo combino mis actividades laborales por cuenta ajena con mi faceta de Diseñador Web Freelance.
+			        </p>
+				</div>
+				<div id="test-swipe-2" class="col s12 red lighten-1">
+					<p>		
+						Siempre he tenido como hábitat el entorno de la industria gráfica, tanto a nivel formativo como laboral. 	Después de finalizar mis estudios de diseño gráfico he trabajado en varias ramas que abarcan desde la preimpresión, impresión, diseño web y márketing online en empresas como El Pais, Cosmobelleza, Mecalux, Groupalia o Hewlett Packard.
+					</p>
+				</div>
+				<div id="test-swipe-3" class="col s12 red lighten-1">
+					<p>		
+						Actualmente sigo creciendo a nivel profesional junto al equipo UX de HP ejerciendo de Lead UX/UI y Desarrollador Web Frontend, pero desde hace ya un tiempo combino mis actividades laborales por cuenta ajena con mi faceta de Diseñador Web Freelance.
+					</p>
+				</div>
 
-					¿Por qué lo usamos?
-					Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
-		        </p>
 	    	</div>    
 		</div>
 	</div>

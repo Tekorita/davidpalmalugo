@@ -1,17 +1,5 @@
 (function(){
 
-//Inicializamos el navbar
-	$(document).ready(function(){
-    	$('.sidenav').sidenav();
-  	});
-
-//Inicializamos el parallax1
-	$(document).ready(function(){
-	    $('.parallax').parallax();
-	});
-
-
-
 	var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -53,13 +41,7 @@
         }, delta);
     };
 
-    //inicializamos el tabs
 
-    $(document).ready(function(){
-        $('.tabs').tabs();
-    });
-
-    // funcion para texto que se escribe solo
 
 	window.onload = function() {
         var elements = document.getElementsByClassName('typewrite');
@@ -76,51 +58,6 @@
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
-
-
-    //funcion para el menu
-
-		$(document).ready(function(){
-		  		var altura = $('.menu').offset().top;
-		  		// alert(altura);
-
-		  		$(window).on('scroll', function(){
-		  			if ($(window).scrollTop() > altura ){
-		  				$('.menu').addClass("menu-fixed");
-		  				$('.menu').addClass("z-depth-5");
-		  			}else{
-		  				$('.menu').removeClass("menu-fixed");
-		  				$('.menu').removeClass("z-depth-5");
-		  			}
-
-		  		});
-		  });    
-
-
-
-
-//funcion para el menu fixed
-		  //var loguito = document.getElementById("logo");
-
-/*		  $(document).ready(function(){
-		  		var altura = $('.menu').offset().top;
-		  		// alert(altura);
-
-		  		$(window).on('scroll', function(){
-		  			if ($(window).scrollTop() > altura ){
-		  				$('.menu').addClass("menu-fixed");
-		  				$('.menu').addClass("z-depth-2");
-		  	//			loguito.setAttribute("src", "static/imagenes/logo-nav.png");
-
-		  			}else{
-		  				$('.menu').removeClass("menu-fixed");
-		  				$('.menu').removeClass("z-depth-2");
-		  	//			loguito.setAttribute("src", "static/imagenes/logo-navv.png");
-		  			}
-
-		  		});
-		  });
-*/
 
 
 }());

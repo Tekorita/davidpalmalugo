@@ -3,6 +3,11 @@
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+
+.titulos {
+  background: #006064;
+}
+ 
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -2836,11 +2841,13 @@ video.responsive-video {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translate3d(50, 20, 30);
+          transform: translate3d(50, 20, 30);
+  -webkit-transform: translateX(-80%);
+          transform: translateX(-80%);
 }
+
+
 
 .pin-top, .pin-bottom {
   position: relative;

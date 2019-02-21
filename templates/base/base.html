@@ -12,7 +12,7 @@
 		<link type="text/css" rel="stylesheet" href="{% static 'css/materialize.css' %}"  media="screen,projection"/>
 		<link type="text/css" rel="stylesheet" href="{% static 'css/estilos.css' %}"  media="screen,projection"/>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
 	{% endblock %}	
 
 	<title>{% block title %} Document {% endblock %}</title>
@@ -20,38 +20,69 @@
 <body>
 	<header>
 		{% block navbar %}
-			{% include 'base/navbar.html' %}
+			{% include 'contenido/paralax1.html' %}	
 		{% endblock%}	
 	</header>
 
 	{% block paralax1 %}
-		{% include 'contenido/paralax1.html' %}
+		{% include 'base/navbar.html' %}		
 	{% endblock %}
-
-	<div class="container">
-		<div class="row">
-		    <div class="col s12 m12 l12">
-		   		{% block content %}
-					{% include 'contenido/sobremi.html' %}
-					{% include 'contenido/habilidades.html' %}				
-				{% endblock %}         
-		    </div>  
+	<div class="section blue-grey darken-2">
+		<div class="container">
+			<div class="row">
+			    <div class="col s12 m12 l12">
+			   		{% block intro %}
+						{% include 'contenido/introduccion.html' %}				
+					{% endblock %}         
+			    </div>  
+			</div>
+		</div>
+	</div>	
+	<div class="section white red lighten-1">
+		<div class="container">
+			<div class="row">
+			    <div class="col s12 m12 l12">
+			   		{% block content %}
+						{% include 'contenido/sobremi.html' %}				
+					{% endblock %}         
+			    </div>  
+			</div>
+		</div>
+	</div>
+	<div class="section white teal accent-4">
+		<div class="container">
+			<div class="row">
+			    <div class="col s12 m12 l12">
+			   		{% block content1 %}
+						{% include 'contenido/skills.html' %}				
+					{% endblock %}         
+			    </div>  
+			</div>
 		</div>
 	</div>
 
-	{% block paralax2 %}
-		{% include 'contenido/paralax2.html' %}
-	{% endblock %}
 
-	<div class="container">
-		<div class="row">
-		    <div class="col s12 m12 l12">
-		   		{% block content2 %}
-					{% include 'contenido/portafolio.html' %}
-					{% include 'contenido/formacion.html' %}				
-				{% endblock %}         
-		    </div>  
-		</div>
+	<div class="section white grey">
+		<div class="container">
+			<div class="row">
+			    <div class="col s12 m12 l12">
+			   		{% block content2 %}
+						{% include 'contenido/portafolio.html' %}				
+					{% endblock %}         
+			    </div>  
+			</div>
+		</div>	
+	</div>
+	<div class="section white blue darken-3">
+		<div class="container">
+			<div class="row">
+			    <div class="col s12 m12 l12">
+			   		{% block content3 %}
+						{% include 'contenido/formacion.html' %}				
+					{% endblock %}         
+			    </div>  
+			</div>
+		</div>	
 	</div>					
 
 	{% block footer %}
@@ -62,7 +93,7 @@
 		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script src="{% static 'js/materialize.min.js'%}"></script>
 		<script src="{% static 'js/main.js'%}"></script>
-		<script  src = "https://unpkg.com/ionicons@4.5.5/dist/ionicons.js" ></script >
+		<script src= "https://unpkg.com/ionicons@4.5.5/dist/ionicons.js" ></script>
 	{% endblock %}
 
 </body>

@@ -94,7 +94,11 @@
 		  			}
 
 		  		});
-		  });    
+		  });
+
+    //inicializamos los efectos wow
+
+        
 
 
 

@@ -1,15 +1,16 @@
-(function(){
 
+(function(){
+//
 //Inicializamos el navbar
 	$(document).ready(function(){
     	$('.sidenav').sidenav();
   	});
 
-//Inicializamos el parallax1
+/*Inicializamos el parallax1
 	$(document).ready(function(){
 	    $('.parallax').parallax();
 	});
-
+*/
 
 
 	var TxtType = function(el, toRotate, period) {
@@ -96,10 +97,18 @@
 		  		});
 		  });
 
-    //inicializamos los efectos wow
+
 
         
 
+
+
+    /*    $(document).ready(function(){
+            $('.parallax-window1').parallax({imageSrc: 'imagenes/paralax1.png'});
+            $('.parallax-window2').parallax({imageSrc: 'imagenes/paralax2.png'});
+            $('.parallax-window2').parallax({imageSrc: 'imagenes/paralax3.jpeg'});
+        }());
+*/
 
 
 
@@ -125,6 +134,21 @@
 		  		});
 		  });
 */
+//    $(document).ready(function(){
+        
+
+  //      {% load staticfiles %}
+          
+        
+    
+
+/*    (function() {
+        $('.parallax-window1').parallax({imageSrc: '../imagenes/paralax1.png'})
+        $('.parallax-window2').parallax({imageSrc: '../imagenes/paralax2.png'})
+        $('.parallax-window2').parallax({imageSrc: '../imagenes/paxalax3.jpeg'})
+    }()); */
+
+    
 
 
 }());

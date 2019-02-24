@@ -21,14 +21,13 @@
 </head>
 <body>
 	<header>
-		{% block navbar %}
+		{% block paralax1 %}
 			{% include 'contenido/paralax1.html' %}	
-		{% endblock%}	
+		{% endblock%}
+		{% block navbar %}
+			{% include 'base/navbar.html' %}		
+		{% endblock %}	
 	</header>
-
-	{% block paralax1 %}
-		{% include 'base/navbar.html' %}		
-	{% endblock %}
 	<div class="section blue-grey darken-2">
 		<div class="container">
 			<div class="row">
@@ -51,6 +50,9 @@
 			</div>
 		</div>
 	</div>
+	{% block paralax2 %}
+		{% include 'contenido/paralax2.html' %}	
+	{% endblock%}
 	<div class="section white teal accent-4">
 		<div class="container">
 			<div class="row">
@@ -86,6 +88,9 @@
 			</div>
 		</div>	
 	</div>
+	{% block paralax3 %}
+		{% include 'contenido/paralax3.html' %}	
+	{% endblock%}
 	<div class="section white green accent-4">
 		<div class="container">
 			<div class="row">
@@ -107,8 +112,22 @@
 		<script src="{% static 'js/materialize.min.js'%}"></script>
 		<script src="{% static 'js/main.js'%}"></script>
 		<script src="{% static 'js/wow.min.js'%}"></script>
+		
+		<script src="{% static 'js/parallax.js'%}"></script>
+
 		<script>new WOW().init();</script>
 		<script src= "https://unpkg.com/ionicons@4.5.5/dist/ionicons.js" ></script>
+		<script>
+	/*	{% load staticfiles %}
+		(function(){
+			$(document).ready(function(){
+	            $('.parallax-window1').parallax({imageSrc: "{% static 'imagenes/paralax1.png' %}"});
+	            $('.parallax-window2').parallax({imageSrc: "{% static 'imagenes/paralax2.png' %}"});
+	            $('.parallax-window2').parallax({imageSrc: "{% static 'imagenes/paralax3.jpeg' %}"});
+	        }());
+		}());
+	*/
+		</script>
 	{% endblock %}
 
 </body>

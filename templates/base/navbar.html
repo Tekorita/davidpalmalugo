@@ -1,4 +1,4 @@
-
+{% load staticfiles %}
 {% block navbar %}
 <div class="menu z-depth-5">
     <nav>
@@ -15,31 +15,60 @@
                     <li><a href="https://github.com/Tekorita" target="_blank"><i class="icon ion-logo-github"></i></a></li>
 
                     <li><a href="https://www.linkedin.com/in/david-palma-lugo-b53388105/" target="_blank"><i class="icon ion-logo-linkedin"></i></a></li>
-                </ul>              
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                </ul>
+                <a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons">menu</i></a>              
+            <!--    <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+             -->
+
                 <ul class="right hide-on-med-and-down">
                     
                     <li><i class="material-icons">home</i></li>
-                    <li class="waves-effect waves-purple"><a href="#home">Home</a></li>
+                    <li class="waves-effect waves-purple waves-effect waves-block waves-light"><a href="#home">Home</a></li>
                     <li><i class="material-icons">face</i></li>
-                    <li class="waves-effect waves-orange"><a href="#sobremi">Sobre mi</a></li>
+                    <li class="waves-effect waves-orange waves-effect waves-block waves-light"><a href="#sobremi">Sobre mi</a></li>
                     <li><i class="material-icons">code</i></li>
-                    <li class="waves-effect waves-yellow"><a href="#skills">Skills</a></li>
+                    <li class="waves-effect waves-yellow waves-effect waves-block waves-light"><a href="#skills">Skills</a></li>
                     <li><i class="material-icons">card_travel</i></li>
-                    <li class="waves-effect waves-red"><a href="#proyectos">Proyectos</a></li>
+                    <li class="waves-effect waves-red waves-effect waves-block waves-light"><a href="#proyectos">Proyectos</a></li>
                     <li><i class="material-icons">school</i></li>
-                    <li class="waves-effect waves-teal"><a href="#experiencia">Experiencia</a></li>
+                    <li class="waves-effect waves-teal waves-effect waves-block waves-light"><a href="#experiencia">Experiencia</a></li>
                     <li><i class="material-icons">call</i></li>
-                    <li class="waves-effect waves-teal"><a href="#formacion">Contacto</a></li>                    
+                    <li class="waves-effect waves-blue waves-effect waves-block waves-light"><a href="#contacto">Contacto</a></li>                    
                 </ul>
-                <ul class="sidenav" id="mobile-demo">
-                    <li><a href="#home" class="">Home</a></li>
-                    <li><a href="#sobremi">Sobre mi</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#experiencia">Experienia</a></li>
-                    <li><a href="#formacion">Contacto</a></li>
+                <ul id="slide-out" class="sidenav">
+                    <li>
+                        <div class="user-view">
+                          <div class="background">
+                            <img src="{% static 'imagenes/paralax4.jpg' %}">
+                          </div>
+                          <a href="#user"><img class="circle" src="{% static 'imagenes/yo3.jpg' %}"></a>
+                          <a href="#name"><span class="white-text name">David Palma Lugo</span></a>
+                          <a href="#email"><span class="white-text email">davidpalmalugo@gmail.com</span></a>
+                        </div>
+                    </li>
+                    <li><a href="#home"><i class="material-icons">home</i>Home</a></li>
+                    <li><a href="#sobremi"><i class="material-icons">face</i>Sobre mi</a></li>
+                    <li><a href="#skills"><i class="material-icons">code</i>Skills</a></li>
+                    <li><a href="#proyectos"><i class="material-icons">card_travel</i>Proyectos</a></li>
+                    <li><a href="#experiencia"><i class="material-icons">school</i>Experiencias</a></li>
+                    <li><a href="#contacto"><i class="material-icons">call</i>Contacto</a></li>
+                    
+                    <li><div class="divider"></div></li>
+                <!--    <li><a class="subheader">Redes</a></li> -->                                    
                 </ul>
+                                                                
+                    
+                        
+                    <!--
+                        <a href="https://www.instagram.com/david_palma07/" target="_blank"><i class="icon ion-logo-instagram"></i></a>
+                    
+                        <a href="https://github.com/Tekorita" target="_blank"><i class="icon ion-logo-github"></i></a>
+                    
+                        <a href="https://www.linkedin.com/in/david-palma-lugo-b53388105/" target="_blank"><i class="icon ion-logo-linkedin"></i></a>
+
+                    -->
+                        
             </div>
         </div>
     </nav>

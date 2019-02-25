@@ -31,6 +31,10 @@ body {
   opacity:0.9;
 }
 
+.container-redes {
+    display: inline-block;
+}
+
 .parallax-window1 {
     min-height: 700px;
     background: transparent;

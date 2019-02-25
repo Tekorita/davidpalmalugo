@@ -28,84 +28,85 @@
 			{% include 'base/navbar.html' %}		
 		{% endblock %}	
 	</header>
-	<div class="section blue-grey darken-2">
-		<div class="container">
-			<div class="row">
-			    <div class="col s12 m12 l12">
-			   		{% block intro %}
-						{% include 'contenido/introduccion.html' %}				
-					{% endblock %}         
-			    </div>  
-			</div>
-		</div>
-	</div>	
-	<div class="section white red lighten-1">
-		<div class="container">
-			<div class="row">
-			    <div class="col s12 m12 l12">
-			   		{% block content %}
-						{% include 'contenido/sobremi.html' %}				
-					{% endblock %}         
-			    </div>  
-			</div>
-		</div>
-	</div>
-	{% block paralax2 %}
-		{% include 'contenido/paralax2.html' %}	
-	{% endblock%}
-	<div class="section white teal accent-4">
-		<div class="container">
-			<div class="row">
-			    <div class="col s12 m12 l12">
-			   		{% block content1 %}
-						{% include 'contenido/skills.html' %}				
-					{% endblock %}         
-			    </div>  
-			</div>
-		</div>
-	</div>
-
-
-	<div class="section white grey">
-		<div class="container">
-			<div class="row">
-			    <div class="col s12 m12 l12">
-			   		{% block content2 %}
-						{% include 'contenido/portafolio.html' %}				
-					{% endblock %}         
-			    </div>  
+	<main>	
+		<div class="section blue-grey darken-2">
+			<div class="container">
+				<div class="row">
+				    <div class="col s12 m12 l12">
+				   		{% block intro %}
+							{% include 'contenido/introduccion.html' %}				
+						{% endblock %}         
+				    </div>  
+				</div>
 			</div>
 		</div>	
-	</div>
-	<div class="section white blue darken-3">
-		<div class="container">
-			<div class="row">
-			    <div class="col s12 m12 l12">
-			   		{% block content3 %}
-						{% include 'contenido/formacion.html' %}				
-					{% endblock %}         
-			    </div>  
+		<div class="section white red lighten-1">
+			<div class="container">
+				<div class="row">
+				    <div class="col s12 m12 l12">
+				   		{% block content %}
+							{% include 'contenido/sobremi.html' %}				
+						{% endblock %}         
+				    </div>  
+				</div>
 			</div>
-		</div>	
-	</div>
-	{% block paralax3 %}
-		{% include 'contenido/paralax3.html' %}	
-	{% endblock%}
-	<div class="section white green accent-4">
-		<div class="container">
-			<div class="row">
-			    <div class="col s12 m12 l12">
-			   		{% block content4 %}
-						{% include 'contenido/contacto.html' %}				
-					{% endblock %}         
-			    </div>  
+		</div>
+		{% block paralax2 %}
+			{% include 'contenido/paralax2.html' %}	
+		{% endblock%}
+		<div class="section white teal accent-4">
+			<div class="container">
+				<div class="row">
+				    <div class="col s12 m12 l12">
+				   		{% block content1 %}
+							{% include 'contenido/skills.html' %}				
+						{% endblock %}         
+				    </div>  
+				</div>
 			</div>
-		</div>	
-	</div>
+		</div>
 
-	{% block footer %}
-		{% include 'base/footer.html' %}
-	{% endblock %}	
+
+		<div class="section white grey">
+			<div class="container">
+				<div class="row">
+				    <div class="col s12 m12 l12">
+				   		{% block content2 %}
+							{% include 'contenido/proyectos.html' %}				
+						{% endblock %}         
+				    </div>  
+				</div>
+			</div>	
+		</div>
+		<div class="section white blue darken-3">
+			<div class="container">
+				<div class="row">
+				    <div class="col s12 m12 l12">
+				   		{% block content3 %}
+							{% include 'contenido/experiencia.html' %}				
+						{% endblock %}         
+				    </div>  
+				</div>
+			</div>	
+		</div>
+		{% block paralax3 %}
+			{% include 'contenido/paralax3.html' %}	
+		{% endblock%}
+		<div class="section white green accent-4">
+			<div class="container">
+				<div class="row">
+				    <div class="col s12 m12 l12">
+				   		{% block content4 %}
+							{% include 'contenido/contacto.html' %}				
+						{% endblock %}         
+				    </div>  
+				</div>
+			</div>	
+		</div>
+	</main>	
+		{% block footer %}
+			{% include 'base/footer.html' %}
+		{% endblock %}	
 	
 	{% block extrajs %}
 		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>

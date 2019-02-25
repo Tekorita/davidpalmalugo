@@ -23,6 +23,10 @@
             transform: translateX(-50%);
   }*/
 
+body {
+    background-color: #263238;
+}
+
 .logo {
   opacity:0.9;
 }
@@ -34,9 +38,10 @@
 }
 
 .parallax-window2 {
-    min-height: 250px;
+    min-height: 400px;
     background: transparent;
 }
+
 
 .contenedor {
     margin: auto;

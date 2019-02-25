@@ -6,11 +6,17 @@
     	$('.sidenav').sidenav();
   	});
 
-/*Inicializamos el parallax1
+//Inicializamos el collapsible
 	$(document).ready(function(){
-	    $('.parallax').parallax();
-	});
-*/
+        $('.collapsible').collapsible();
+    });
+
+//Inicializamos el formulario
+
+    $(document).ready(function() {
+        $('input#input_text, textarea#textarea2').characterCounter();
+    });
+
 
 
 	var TxtType = function(el, toRotate, period) {

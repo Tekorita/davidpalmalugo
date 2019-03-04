@@ -84,9 +84,9 @@ body {
     animation: escribir 5s steps(30) infinite alternate;
 }
 
-@keyframes escribir {
-    from { width: 100% }
-    to { width:0 }
+.logo-pais {
+    animation: logo-pais-spin infinite 5s linear;
+    pointer-events: none;
 }
 
 h1.big_white {
@@ -97,3 +97,17 @@ h1.big_white {
     text-transform: uppercase;
     /*text-shadow: 1px 1px 1px #333;*/
 } 
+
+@keyframes logo-pais-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+}

@@ -54,6 +54,10 @@ body {
     padding-top: 15px;
 }
 
+.container-redes {
+    padding-left: 20px;
+}
+
 .contenedor-logos {
     padding-top: 40px;
 }
@@ -110,4 +114,65 @@ h1.big_white {
 @keyframes escribir {
     from { width: 100% }
     to { width:0 }
+}
+
+
+.border-nav-1 {
+	border-bottom: 5px solid #ffd600;
+	line-height: 58px;
+}
+
+.border-nav-2 {
+	border-bottom: 5px solid #01579b;
+	line-height: 58px;
+}
+
+.border-nav-3 {
+	border-bottom: 5px solid #00c853;
+	line-height: 58px;
+}
+
+.border-nav-4 {
+	border-bottom: 5px solid #e65100;
+	line-height: 58px;
+}
+
+.border-nav-5 {
+	border-bottom: 5px solid #311b92;
+	line-height: 58px;
+}
+
+.border-nav-6 {
+	border-bottom: 5px solid #c62828;
+	line-height: 58px;
+}
+
+/*.eje {
+    font-size: 14.5px;
+    -moz-transition: font-size 200ms linear 0s; 
+    -webkit-transition: font-size 200ms linear 0s;
+    -o-transition: font-size 200ms linear 0s;
+    transition: font-size 200ms linear 0s;
+}*/
+
+.link:hover{
+    background-color:#006064;
+}
+.link-movil1:hover{
+    background-color:#fff59d;
+}
+.link-movil2:hover{
+    background-color:#81d4fa;
+}
+.link-movil3:hover{
+    background-color:#69f0ae;
+}
+.link-movil4:hover{
+    background-color:#ffe082;
+}
+.link-movil5:hover{
+    background-color:#9fa8da;
+}
+.link-movil6:hover{
+    background-color:#ef9a9a;
 }

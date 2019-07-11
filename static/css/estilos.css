@@ -42,7 +42,7 @@ body {
 .parallax-window1 {
     min-height: 700px;
     background: transparent;
-    padding-top: 7%;
+    padding-top: 5%;
 }
 
 .parallax-window2 {
@@ -123,6 +123,37 @@ h1.big_white {
 }
 
 .border-nav-2 {
+	border-bottom: 5px solid #EF5350;
+	line-height: 58px;
+}
+
+.border-nav-3 {
+	border-bottom: 5px solid #00BFA5;
+	line-height: 58px;
+}
+
+.border-nav-4 {
+	border-bottom: 5px solid #ffffff;
+	line-height: 58px;
+}
+
+.border-nav-5 {
+	border-bottom: 5px solid #1976D2;
+	line-height: 58px;
+}
+
+.border-nav-6 {
+	border-bottom: 5px solid #00C853;
+	line-height: 58px;
+}
+
+/*
+.border-nav-1 {
+	border-bottom: 5px solid #ffd600;
+	line-height: 58px;
+}
+
+.border-nav-2 {
 	border-bottom: 5px solid #01579b;
 	line-height: 58px;
 }
@@ -146,6 +177,7 @@ h1.big_white {
 	border-bottom: 5px solid #c62828;
 	line-height: 58px;
 }
+*/
 
 /*.eje {
     font-size: 14.5px;
@@ -179,43 +211,3 @@ h1.big_white {
 
 /*btn down scroll*/
 
-.arrow-down{
-    width:60px;
-    height:40px;
-    margin:0 0 0 -30px;
-    position:absolute;
-    left:50%;
-    bottom:0px;
-    animation: arrow 0.5s 1s infinite ease-out alternate;
-    
-  }
-  
-  .arrow-down:hover{
-     animation-play-state: paused;
-  }
-  
-  .left-btn{
-    position:absolute;
-    height:10px;
-    width:40px;
-    background:blue;
-    transform:rotate(240deg);
-    top:10px;
-    left:10px;
-    border-radius:4px;
-    transform-origin:5px 50%;
-    animation: leftArrow 0.5s 1s infinite ease-out alternate;
-  }
-  
-  .right-btn{
-    position:absolute;
-    height:10px;
-    width:40px;
-    background:blue;
-    transform:rotate(-60deg);
-    top:10px;
-    left:10px;
-    border-radius:4px;
-    transform-origin:5px 50%;
-    animation: rightArrow 0.5s 1s infinite ease-out alternate;
-  }

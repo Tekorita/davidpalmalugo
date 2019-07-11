@@ -42,7 +42,7 @@ body {
 .parallax-window1 {
     min-height: 700px;
     background: transparent;
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 .parallax-window2 {
@@ -123,6 +123,37 @@ h1.big_white {
 }
 
 .border-nav-2 {
+	border-bottom: 5px solid #EF5350;
+	line-height: 58px;
+}
+
+.border-nav-3 {
+	border-bottom: 5px solid #00BFA5;
+	line-height: 58px;
+}
+
+.border-nav-4 {
+	border-bottom: 5px solid #ffffff;
+	line-height: 58px;
+}
+
+.border-nav-5 {
+	border-bottom: 5px solid #1976D2;
+	line-height: 58px;
+}
+
+.border-nav-6 {
+	border-bottom: 5px solid #00C853;
+	line-height: 58px;
+}
+
+/*
+.border-nav-1 {
+	border-bottom: 5px solid #ffd600;
+	line-height: 58px;
+}
+
+.border-nav-2 {
 	border-bottom: 5px solid #01579b;
 	line-height: 58px;
 }
@@ -146,6 +177,7 @@ h1.big_white {
 	border-bottom: 5px solid #c62828;
 	line-height: 58px;
 }
+*/
 
 /*.eje {
     font-size: 14.5px;
@@ -177,7 +209,7 @@ h1.big_white {
     background-color:#ef9a9a;
 }
 
-/* btn down scroll */
+/*btn down scroll*/
 
 @import "compass/css3";
 @-webkit-keyframes bounce {

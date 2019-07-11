@@ -42,7 +42,7 @@ body {
 .parallax-window1 {
     min-height: 700px;
     background: transparent;
-    padding-top: 10%;
+    padding-top: 7%;
 }
 
 .parallax-window2 {
@@ -176,3 +176,46 @@ h1.big_white {
 .link-movil6:hover{
     background-color:#ef9a9a;
 }
+
+/*btn down scroll*/
+
+.arrow-down{
+    width:60px;
+    height:40px;
+    margin:0 0 0 -30px;
+    position:absolute;
+    left:50%;
+    bottom:0px;
+    animation: arrow 0.5s 1s infinite ease-out alternate;
+    
+  }
+  
+  .arrow-down:hover{
+     animation-play-state: paused;
+  }
+  
+  .left-btn{
+    position:absolute;
+    height:10px;
+    width:40px;
+    background:blue;
+    transform:rotate(240deg);
+    top:10px;
+    left:10px;
+    border-radius:4px;
+    transform-origin:5px 50%;
+    animation: leftArrow 0.5s 1s infinite ease-out alternate;
+  }
+  
+  .right-btn{
+    position:absolute;
+    height:10px;
+    width:40px;
+    background:blue;
+    transform:rotate(-60deg);
+    top:10px;
+    left:10px;
+    border-radius:4px;
+    transform-origin:5px 50%;
+    animation: rightArrow 0.5s 1s infinite ease-out alternate;
+  }

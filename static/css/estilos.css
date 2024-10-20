@@ -40,7 +40,7 @@ body {
 }
 
 .parallax-window1 {
-    min-height: 700px;
+    height: 100vh;
     background: transparent;
     padding-top: 5%;
 }
@@ -322,4 +322,21 @@ h1.big_white {
 }
 .spacing {
 	margin-bottom: 25px;
+}
+
+.section-customer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; /* Abarcará siempre el 100% de la pantalla */
+}
+
+.custom-margin-tag-a {
+  margin-bottom: 20px; /* Ajusta el valor según el espacio que necesites */
+}
+
+.custom-responsive-avatar {
+  display: block;
+  transform: scale(1.2); /* Aumenta el tamaño un 20% */
+  margin: 0 auto; /* Asegura que la imagen esté centrada */
 }

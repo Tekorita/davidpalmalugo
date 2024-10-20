@@ -143,7 +143,7 @@
 //    $(document).ready(function(){
         
 
-  //      {% load staticfiles %}
+  //      {% load static %}
           
         
     

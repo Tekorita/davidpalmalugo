@@ -25,9 +25,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 's-26@br@k3midwh714n-@*uhy2-16ly)^q-w8)6o$=j&rr6_^-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [] #para uso local
+# ALLOWED_HOSTS = [] #para uso local
+ALLOWED_HOSTS = ['*'] #para uso local
 # ALLOWED_HOSTS = ['davidpalmalugo.herokuapp.com'] #para uso en heroku
 
 
@@ -129,7 +130,7 @@ USE_TZ = True
 
 #STATIC_URL = '/static/'
 import dj_database_url
-db_from_env = dj_database_url.config(conn_max_age=500)
+db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES['default'].update(db_from_env)
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

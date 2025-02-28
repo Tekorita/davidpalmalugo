@@ -218,7 +218,7 @@ h1.big_white {
 
 /*btn down scroll*/
 
-@import "compass/css3";
+/* @import "compass/css3"; */
 @-webkit-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);

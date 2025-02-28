@@ -28,8 +28,8 @@ SECRET_KEY = 's-26@br@k3midwh714n-@*uhy2-16ly)^q-w8)6o$=j&rr6_^-'
 DEBUG = False
 
 # ALLOWED_HOSTS = [] #para uso local
-ALLOWED_HOSTS = ['*'] #para uso local
-# ALLOWED_HOSTS = ['davidpalmalugo.herokuapp.com'] #para uso en heroku
+# ALLOWED_HOSTS = ['*'] #para uso local
+ALLOWED_HOSTS = ['davidpalmalugo.com'] #para uso en heroku
 
 
 # Application definition

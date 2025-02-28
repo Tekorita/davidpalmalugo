@@ -153,8 +153,28 @@
         $('.parallax-window2').parallax({imageSrc: '../imagenes/paralax2.png'})
         $('.parallax-window2').parallax({imageSrc: '../imagenes/paxalax3.jpeg'})
     }()); */
+    document.addEventListener("DOMContentLoaded", function () {
+        // Selecciona todos los iconos de LinkedIn
+        document.querySelectorAll(".linkedin-icon").forEach(icon => {
+            icon.addEventListener("click", function (event) {
+                event.stopPropagation(); // Evita que interfiera con el carrusel
+                const linkedinURL = this.getAttribute("data-linkedin"); // Obtiene el enlace del atributo data
+                if (linkedinURL) {
+                    window.open(linkedinURL, "_blank"); // Abre LinkedIn en una nueva pestaña
+                }
+            });
+        });
+    });
 
-    
-
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.materialboxed');
+      var instances = M.Materialbox.init(elems, options);
+    });
+  
+    // Or with jQuery
+  
+    $(document).ready(function(){
+      $('.materialboxed').materialbox();
+    });
 
 }());

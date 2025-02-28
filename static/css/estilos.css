@@ -118,33 +118,40 @@ h1.big_white {
 
 
 .border-nav-1 {
-	border-bottom: 5px solid #ffd600;
-	line-height: 58px;
+	border-bottom: 5px solid #7e57c2;
 }
 
 .border-nav-2 {
 	border-bottom: 5px solid #EF5350;
-	line-height: 58px;
 }
 
 .border-nav-3 {
 	border-bottom: 5px solid #00BFA5;
-	line-height: 58px;
 }
 
 .border-nav-4 {
 	border-bottom: 5px solid #ffffff;
-	line-height: 58px;
 }
 
 .border-nav-5 {
-	border-bottom: 5px solid #1976D2;
-	line-height: 58px;
+	border-bottom: 5px solid #ffd600;
 }
 
 .border-nav-6 {
+	border-bottom: 5px solid #1976D2;
+}
+
+.border-nav-7 {
+	border-bottom: 5px solid #607d8b;
+}
+
+.border-nav-8 {
 	border-bottom: 5px solid #00C853;
-	line-height: 58px;
+}
+
+.menu-item {
+  display: inline-block;
+  padding-top: 7px; /* Asegura que no haya espacio adicional debajo */
 }
 
 /*
@@ -309,6 +316,12 @@ h1.big_white {
   height: 60px;
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
   background-size: contain;
+  
+  /* Modificación para ubicarla más abajo */
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .bounce {
   -webkit-animation: bounce 2s infinite;
@@ -318,7 +331,11 @@ h1.big_white {
 }
 
 .bounce-align {
-	text-align: -webkit-center;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }
 .spacing {
 	margin-bottom: 25px;
@@ -326,9 +343,14 @@ h1.big_white {
 
 .section-customer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh; /* Abarcará siempre el 100% de la pantalla */
+  flex-direction: column; /* Apilar elementos verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  justify-content: center; /* Centrar verticalmente */
+  min-height: 100vh; /* Ocupar toda la altura de la pantalla */
+  width: 100%;
+  margin: 0; /* Asegurar que no haya márgenes adicionales */
+  padding: 0; /* Eliminar padding extra */
+  text-align: center; /* Asegura que el contenido dentro esté centrado */
 }
 
 .custom-margin-tag-a {
@@ -342,24 +364,20 @@ h1.big_white {
 }
 
 #home {
-  position: relative; /* Permite usar posicionamiento absoluto para elementos hijos */
-  min-height: 100vh; /* Asegura que el contenedor tenga altura completa */
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  transform: translateY(-12%); /* Ajusta el valor para moverlo más arriba */
 }
 
-.arrow {
-  position: absolute;
-  bottom: 10px; /* Ajusta este valor según la cercanía deseada al borde */
-  left: 50%; /* Centra horizontalmente */
-  transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
-  background-color: #fff; /* Ajusta el estilo según tu diseño */
-  border-radius: 50%;
-  animation: bounce 2s infinite; /* Para mantener el efecto animado */
-}
+/* #home * {
+  margin: 0 !important;
+  padding: 0 !important;
+} */
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
@@ -370,5 +388,147 @@ h1.big_white {
   }
   60% {
       transform: translateY(-5px);
+  }
+}
+
+.custom-spacing {
+  margin-top: 30px;
+}
+
+@font-face {
+  font-family: 'FingerPaint';
+  src: url('../fonts/FingerPaint-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'FingerPaint', sans-serif;
+}
+
+@font-face {
+  font-family: 'PatrickHand';
+  src: url('../fonts/PatrickHand-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2, h3, h4, h5, h6, p {
+  font-family: 'PatrickHand', sans-serif;
+}
+
+h2 { font-size: 2.5em; } /* Títulos más grandes */
+h3 { font-size: 1.8em; }
+h4 { font-size: 1.6em; }
+h5 { font-size: 1.5em; }
+h6 { font-size: 1.2em; }
+p  { font-size: 1.4em; } /* Párrafos ligeramente más grandes */
+
+
+.carousel {
+  height: 620px; /* Ajusta la altura del carrusel */
+}
+
+.carousel .carousel-item {
+  width: 480px !important; /* Ajusta el ancho de cada card */
+  height: 600px !important; /* Ajusta la altura de cada card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel .card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  border-radius: 15px; /* Bordes redondeados */
+  overflow: hidden; /* Asegura que el contenido dentro también respete el border-radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una ligera sombra para mejor estética */
+}
+
+.card-content {
+  border-radius: 0 0 15px 15px; /* Hace que solo los bordes inferiores sean curvados */
+}
+
+.avatar-container {
+  display: flex;
+  align-items: center; /* Alinea la imagen y el texto verticalmente */
+  gap: 20px; /* Aumenta el espacio entre la imagen y el texto */
+  margin-top: -20px; /* Mueve la imagen más arriba dentro del card */
+}
+
+.avatar-container img {
+  width: 150px; /* Ajusta el tamaño del avatar */
+  height: 150px;
+  border-radius: 50%; /* Hace la imagen completamente circular */
+  object-fit: cover;
+  border: 3px solid #ddd; /* Borde opcional para una mejor estética */
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column; /* Mantiene el nombre y cargo en columna */
+  justify-content: center; /* Asegura buena alineación vertical */
+}
+
+.name-title {
+  margin: 0;
+  font-size: 1.8rem; /* Ajusta el tamaño del nombre */
+  font-weight: bold;
+}
+
+.position-title {
+  margin-top: 5px; /* Agrega espacio entre el nombre y el cargo */
+  font-size: 1.2rem; /* Ajusta el tamaño del cargo */
+  color: gray; /* Hace que el título tenga un color más sutil */
+}
+
+.linkedin-icon {
+  font-size: 2.5rem; /* Aumenta el tamaño del icono */
+  color: #0077b5; /* Color oficial de LinkedIn */
+  cursor: pointer; /* Indica que es interactivo */
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out; /* Suaviza la animación */
+}
+
+.linkedin-icon:hover {
+  transform: scale(1.3); /* Hace que el icono crezca un 30% */
+  color: #005582; /* Un color más oscuro al hacer hover */
+}
+
+.certificados-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra todos los elementos en la fila */
+}
+
+.certificado-centrado {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Ocupa toda la fila disponible */
+}
+
+.certificado-centrado .card {
+  max-width: 50%; /* La tarjeta ocupará el 50% del ancho para estar bien centrada */
+}
+
+@media (max-width: 992px) { /* Para tablets y móviles */
+  .certificado-centrado .card {
+      max-width: 100%; /* Ocupa el ancho completo en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 600px) {
+  .img-perfil {
+      width: 180px !important;  /* Reducimos el tamaño solo en móviles */
+      height: 180px !important; /* Mantiene la proporción */
+      display: block;
+      margin: 0 auto;  /* Centra la imagen */
+      margin-bottom: 20px;
   }
 }

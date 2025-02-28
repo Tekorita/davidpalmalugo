@@ -1,80 +1,100 @@
 {% load static %}
 {% block content %}
 <div id="skills" class="section scrollspy">
-	<div class="container-fluid">
-		<div class="row white-text">
-			<div class="col s12 m12 l12 center wow fadeInUp">
-				<img class="responsive-img" src="{% static 'imagenes/skills1.png'%}">
-			</div>
-			<div class="col s12 m6 l3 wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.2s">
-			    <h4><strong>Backend</strong></h4>
-			        <ul>
-			        	<li><i class="material-icons">done</i> Python</li>
-			        	<li><i class="material-icons">done</i> PHP</li>
-			        	<li></li>
-			        	<li><h6><strong>- Frameworks -</strong></h6></li>
-						<li><i class="material-icons">done</i> Django</li>
-						<li><i class="material-icons">done</i> Flask</li>
-						<li><i class="material-icons">done</i> Laravel</li>
-						<li><i class="material-icons">done</i> Codigniter</li>
-						<li></li>
-						<li><h6><strong>- Librerías -</strong></h6></li>
-						<li><i class="material-icons">done</i> Selenium</li>
-						<li><i class="material-icons">done</i> Pandas</li>
-						<li><i class="material-icons">done</i> Numpy</li>
-						<li><i class="material-icons">done</i> Beautiful Soup</li>
-						<li><i class="material-icons">done</i> DryScape</li>
-						<li><i class="material-icons">done</i> Request Services</li>
-						<li><i class="material-icons">done</i> Django rest framework</li>
-						<li><i class="material-icons">done</i> Pytest</li>
-						<li></li>
-						<li><h6><strong>- Empaquetador y Otros -</strong></h6></li>
-						<li><i class="material-icons">done</i> Docker</li>
-						<li><i class="material-icons">done</i> Codeship</li>
-						<li><i class="material-icons">done</i> AWS (S3 y Cloudwatch)</li>
-			        </ul>
-			</div>
-			<div class="col s12 m6 l3 wow bounceInUp" data-wow-duration="1.4s">
-			    <h4><strong>Frontend</strong></h4>
-			        <ul>
-			        	<li><i class="material-icons">done</i> Html5</li>
-			        	<li><i class="material-icons">done</i> CSS3</li>
-			        	<li><i class="material-icons">done</i> Javascript</li>
-			        	<li><i class="material-icons">done</i> Jquery</li>
-			        	<li><i class="material-icons">done</i> FlexboxGrid</li>
-			        	<li><li>
-			        	<li><h6><strong>- Preprocesadores -</strong></h6></li>
-			        	<li><i class="material-icons">done</i> Sass</li>
-			        	<li><li>
-			        	<li><h6><strong>- Frameworks -</strong></h6></li>
-			        	<li><i class="material-icons">done</i> Materializecss</li>
-			        	<li><i class="material-icons">done</i> Bootstrap<li>
-						<li><i class="material-icons">done</i> Ant Design<li>
-			        	<li><h6><strong>- Librerías -</strong></h6></li>
-						<li><i class="material-icons">done</i> React Js</li>
-						<li><i class="material-icons">done</i> Redux</li>
-						<li><i class="material-icons">done</i> Vue Js</li>
-						<li><h6><strong>- Empaquetador -</strong></h6></li>
-						<li><i class="material-icons">done</i> Webpack</li>
-			        </ul>
-			</div>
-			<div class="col s12 m6 l3 wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.5s">
-			    <h4><strong>Base de Datos</strong></h4>
-			        <ul>
-			        	<li><i class="material-icons">done</i> MySql</li>
-			        	<li><i class="material-icons">done</i> Postgresql</li>
-			        </ul>
-			</div>
-			<div class="col s12 m6 l3 wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.7s">
-			    <h4><strong>Gestor de Versiones</strong></h4>
-			        <ul>
-			        	<li><i class="material-icons">done</i> Git</li>
-						<li><i class="material-icons">done</i> GitHub </li>
-						<li><i class="material-icons">done</i> Bitbucket</li>
-						<li><i class="material-icons">done</i> Git-Flow</li>
-			        </ul>
-			</div>
-		</div>
-	</div>
+    <div class="container-fluid">
+        <div class="row white-text">
+            <h1 class="white-text center">Skills</h1>
+            <br>
+            
+            <!-- Primera columna: Backend + Testing -->
+            <div class="col s12 m6 l3 wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.2s">
+                <h2><strong>Backend</strong></h2>
+                <ul>
+                    <li><h6>-Python</h6></li>
+                    <li><h6>-PHP</h6></li>
+                    <li><h4><strong>Librerías</strong></h4></li>
+                    <li><h6>-Django REST Framework</h6></li>
+                    <li><h6>-Selenium</h6></li>
+                    <li><h6>-Pandas</h6></li>
+                    <li><h6>-NumPy</h6></li>
+                    <li><h6>-BeautifulSoup</h6></li>
+                    <li><h6>-Requests</h6></li>
+                    <li><h6>-Unidecode</h6></li>
+                </ul>
+                <h2><strong>Testing y Calidad de Código</strong></h2>
+                <ul>
+                    <li><h6>-pytest</h6></li>
+                    <li><h6>-coverage</h6></li>
+                    <li><h6>-factory-boy</h6></li>
+                    <li><h6>-django-silk</h6></li>
+                </ul>
+            </div>
+
+            <!-- Segunda columna: Frameworks + Seguridad -->
+            <div class="col s12 m6 l3 wow bounceInUp" data-wow-duration="1.4s">
+                <h2><strong>Frameworks</strong></h2>
+                <ul>
+                    <li><h6>-Django</h6></li>
+                    <li><h6>-Flask</h6></li>
+                    <li><h6>-Laravel</h6></li>
+                    <li><h6>-CodeIgniter</h6></li>
+                    <li><h4><strong>Manejo de Archivos y Reportes</strong></h4></li>
+                    <li><h6>-Pillow</h6></li>
+                    <li><h6>-OpenPyXL</h6></li>
+                    <li><h6>-ReportLab</h6></li>
+                    <li><h6>-svglib</h6></li>
+                </ul>
+                <h2><strong>Autenticación y Seguridad</strong></h2>
+                <ul>
+                    <li><h6>-PyJWT</h6></li>
+                    <li><h6>-Cryptography</h6></li>
+                    <li><h6>-Argon2</h6></li>
+                </ul>
+            </div>
+
+            <!-- Tercera columna: Base de Datos + Code Quality -->
+            <div class="col s12 m6 l3 wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.5s">
+                <h2><strong>Base de Datos</strong></h2>
+                <ul>
+                    <li><h6>-MySQL</h6></li>
+                    <li><h6>-PostgreSQL</h6></li>
+                    <li><h6>-Redis</h6></li>
+                </ul>
+                <h2><strong>Code Quality</strong></h2>
+                <ul>
+                    <li><h6>-Flake8</h6></li>
+                    <li><h6>-Black</h6></li>
+                    <li><h6>-Sphinx</h6></li>
+                    <li><h6>-Mypy</h6></li>
+                </ul>
+                <h2><strong>Gestor de Versiones</strong></h2>
+                <ul>
+                    <li><h6>-Git</h6></li>
+                    <li><h6>-GitHub</h6></li>
+                    <li><h6>-Bitbucket</h6></li>
+                    <li><h6>-Git-Flow</h6></li>
+                </ul>
+            </div>
+
+            <!-- Cuarta columna: Colas de Tareas + Herramientas de Desarrollo -->
+            <div class="col s12 m6 l3 wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.7s">
+                <h2><strong>Colas de Tareas y Mensajería</strong></h2>
+                <ul>
+                    <li><h6>-Celery</h6></li>
+                    <li><h6>-Flower</h6></li>
+                    <li><h6>-Celery Slack</h6></li>
+                </ul>
+                <h2><strong>Herramientas de Desarrollo</strong></h2>
+                <ul>
+                    <li><h6>-Werkzeug</h6></li>
+                    <li><h6>-Whitenoise</h6></li>
+                    <li><h6>-Boto3 (AWS)</h6></li>
+                    <li><h6>-Django Debug Toolbar</h6></li>
+                    <li><h6>-pylint-django</h6></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
 </div>
 {% endblock %}

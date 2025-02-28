@@ -340,3 +340,51 @@ h1.big_white {
   transform: scale(1.2); /* Aumenta el tamaño un 20% */
   margin: 0 auto; /* Asegura que la imagen esté centrada */
 }
+
+#home {
+  position: relative; /* Permite usar posicionamiento absoluto para elementos hijos */
+  min-height: 100vh; /* Asegura que el contenedor tenga altura completa */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 10px; /* Ajusta este valor según la cercanía deseada al borde */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: #fff; /* Ajusta el estilo según tu diseño */
+  border-radius: 50%;
+  animation: bounce 2s infinite; /* Para mantener el efecto animado */
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-10px);
+  }
+  60% {
+      transform: translateY(-5px);
+  }
+}
+
+.img-small {
+  display: none;
+}
+
+/* Mostrar la imagen pequeña y ocultar la grande en resoluciones pequeñas */
+@media screen and (max-width: 600px) {
+  .img-large {
+      display: none;
+  }
+  .img-small {
+      display: block;
+      width: 80px; /* Ajusta el tamaño pequeño deseado */
+      height: 80px; /* Mantén las proporciones */
+  }
+}

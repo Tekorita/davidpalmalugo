@@ -12,6 +12,8 @@
 		<link type="text/css" rel="stylesheet" href="{% static 'css/materialize.css' %}"  media="screen,projection"/>
 		<link type="text/css" rel="stylesheet" href="{% static 'css/animate.min.css' %}"  media="screen,projection"/>
 		<link type="text/css" rel="stylesheet" href="{% static 'css/estilos.css' %}"  media="screen,projection"/>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'><link rel="stylesheet" href="./style.css">
+
 		<link rel="shortcut icon" type="image/png" href="{% static 'imagenes/favicon.png' %}"/> 
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
@@ -76,12 +78,35 @@
 				</div>
 			</div>	
 		</div>
-		<div class="section white  blue darken-2">
+		<div class="section white yellow accent-4">
 			<div class="container">
 				<div class="row">
 				    <div class="col s12 m12 l12">
 				   		{% block content3 %}
+							{% include 'contenido/certificados.html' %}				
+						{% endblock %}         
+				    </div>  
+				</div>
+			</div>	
+		</div>
+		<div class="section white  blue darken-2">
+			<div class="container">
+				<div class="row">
+				    <div class="col s12 m12 l12">
+				   		{% block content4 %}
 							{% include 'contenido/experiencia.html' %}				
+						{% endblock %}         
+				    </div>  
+				</div>
+			</div>	
+		</div>
+
+		<div class="section blue-grey lighten-4">
+			<div class="container">
+				<div class="row">
+				    <div class="col s12 m12 l12">
+				   		{% block content5 %}
+							{% include 'contenido/referencias.html' %}				
 						{% endblock %}         
 				    </div>  
 				</div>
@@ -94,7 +119,7 @@
 			<div class="container">
 				<div class="row">
 				    <div class="col s12 m12 l12">
-				   		{% block content4 %}
+				   		{% block content6 %}
 							{% include 'contenido/contacto.html' %}				
 						{% endblock %}         
 				    </div>  
@@ -117,15 +142,16 @@
 		<script>new WOW().init();</script>
 		<script src= "https://unpkg.com/ionicons@4.5.5/dist/ionicons.js" ></script>
 		<script>
-	/*	{% load static %}
-		(function(){
-			$(document).ready(function(){
-	            $('.parallax-window1').parallax({imageSrc: "{% static 'imagenes/paralax1.png' %}"});
-	            $('.parallax-window2').parallax({imageSrc: "{% static 'imagenes/paralax2.png' %}"});
-	            $('.parallax-window2').parallax({imageSrc: "{% static 'imagenes/paralax3.jpeg' %}"});
-	        }());
-		}());
-	*/
+		</script>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				var elems = document.querySelectorAll('.carousel');
+				var instances = M.Carousel.init(elems, {
+					fullWidth: false,
+					indicators: true
+				});
+			});
 		</script>
 	{% endblock %}
 

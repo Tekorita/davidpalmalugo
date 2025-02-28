@@ -27,8 +27,7 @@ SECRET_KEY = 's-26@br@k3midwh714n-@*uhy2-16ly)^q-w8)6o$=j&rr6_^-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['davidpalmalugo.com', 'www.davidpalmalugo.com', 'davidpalmalugo.herokuapp.com']
-
+ALLOWED_HOSTS = ['*'] #para uso en heroku
 
 
 # Application definition

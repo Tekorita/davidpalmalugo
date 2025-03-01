@@ -12,9 +12,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 's-26@br@k3midwh714n-@*uhy2-16ly)^q-w8
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'davidpalmalugo-6ad22cc927e9.herokuapp.com',
-    'davidpalmalugo.com',
-    'www.davidpalmalugo.com'
+    'davidpalmalugo-6ad22cc927e9.herokuapp.com'
 ]
 
 # Application definition

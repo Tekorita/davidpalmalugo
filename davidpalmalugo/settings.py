@@ -72,8 +72,9 @@ WSGI_APPLICATION = 'davidpalmalugo.wsgi.application'
 # }
 
 # Database
-db_from_env = dj_database_url.config(default=os.getenv("DATABASE_URL"), conn_max_age=600, ssl_require=True)
-DATABASES['default'].update(db_from_env)
+DATABASES = {
+    'default': dj_database_url.config(default=os.getenv("DATABASE_URL"), conn_max_age=600, ssl_require=True)
+}
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [

@@ -146,7 +146,7 @@ h1.big_white {
 }
 
 .border-nav-8 {
-	border-bottom: 5px solid #00C853;
+	border-bottom: 5px solid #43a047;
 }
 
 .menu-item {
@@ -319,7 +319,7 @@ h1.big_white {
   /* Modificación para ubicarla más abajo */
   position: absolute;
   bottom: 5%;
-  left: 50%;
+  left: 45%;
   transform: translateX(-50%);
 }
 .bounce {
@@ -332,7 +332,7 @@ h1.big_white {
 .bounce-align {
   position: absolute;
   bottom: 0%;
-  left: 50%;
+  left: 45%;
   transform: translateX(-50%);
   text-align: center;
 }
@@ -562,4 +562,15 @@ p  { font-size: 1.4em; } /* Párrafos ligeramente más grandes */
       margin: 0 auto;  /* Centra la imagen */
       margin-top: 150px;
   }
+}
+
+.custom-collapsible {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.custom-collapsible-contacto {
+  border-radius: 12px; /* Bordes redondeados para todo el componente */
+  overflow: hidden; /* Asegura que los bordes sean visibles */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil */
 }

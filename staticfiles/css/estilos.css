@@ -574,3 +574,10 @@ p  { font-size: 1.4em; } /* Párrafos ligeramente más grandes */
   overflow: hidden; /* Asegura que los bordes sean visibles */
   border: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil */
 }
+
+@media (max-width: 600px) {
+    .fa-gitlab {
+        position: relative;
+        top: 5px;
+    }
+}
